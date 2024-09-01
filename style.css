@@ -83,15 +83,6 @@ header {
    transition: 0.5s;
 }
 
-span {
-    font-family: 'Poppins';
-    font-weight:600;
-    font-size: 50px;
-    line-height: 69px;
-    background: linear-gradient(to right,#4CE0D7,#8BA9F4);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
 
 .container-small p {
     font-family: 'Poppins';
@@ -354,54 +345,7 @@ span {
     color: #262626;
 }
 
-.footer {
-    margin-top: 500px;
-    position: relative;
-}
 
-.footer .logo{
-    width: 170px;
-    height: 35px;
-    position: absolute;
-    top: 13px;
-    left: 10px;
-}
-
-.footer > .facebook {
-    position: absolute;
-    top: 15px;
-    left: 270px;
-}
-
-.footer > .tweeter {
-    position: absolute;
-    top: 15px;
-    left: 320px;
-}
-
-.footer > .linkedin {
-    position: absolute;
-    top: 15px;
-    left: 370px;
-}
-
-.footer > .youtube {
-    position: absolute;
-    top: 15px;
-    left: 420px;
-}
-
-.footer > .instagram {
-    position: absolute;
-    top: 15px;
-    left: 470px;
-}
-
-.footer > p {
-    position: absolute;
-    top: 60px;
-    left: 10px;
-}
 
 .last-footer {
     position: relative;
@@ -416,15 +360,71 @@ span {
 
 /* hr ხაზი */
 
-.h {
-    margin-bottom: 95px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
 
-hr {
-    max-width: 600px;
-}
 
+/* რესპონსული ვებ გვერდი */
+@media and (max: width 600px;){
+
+    .footer {
+        margin-top: 500px;
+        position: relative;
+    }
+    
+    .footer .logo{
+        width: 170px;
+        height: 35px;
+        position: absolute;
+        top: 13px;
+        left: 10px;
+    }
+    
+    .footer > .facebook {
+        position: absolute;
+        top: 15px;
+        left: 270px;
+    }
+    
+    .footer > .tweeter {
+        position: absolute;
+        top: 15px;
+        left: 320px;
+    }
+    
+    .footer > .linkedin {
+        position: absolute;
+        top: 15px;
+        left: 370px;
+    }
+    
+    .footer > .youtube {
+        position: absolute;
+        top: 15px;
+        left: 420px;
+    }
+    
+    .footer > .instagram {
+        position: absolute;
+        top: 15px;
+        left: 470px;
+    }
+    
+    .footer > p {
+        position: absolute;
+        top: 60px;
+        left: 10px;
+    }
+
+    .h {
+        margin-bottom: 95px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    hr {
+        max-width: 600px;
+    }
+
+}
+    
 
 
