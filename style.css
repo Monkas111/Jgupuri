@@ -65,7 +65,8 @@ header {
   }
   
   .topics-cards img:hover {
-    transform: scale(2);
+    transform: scale(1.5);
+    border: 5px solid #4CE0D7
   }
 
 .navigation {
@@ -342,6 +343,14 @@ span {
 
 }
 
+h1 {
+    transition: transform 0.3s ease; 
+  }
+  
+h1:hover {
+    transform: scale(1.08);
+  }
+
 .copyright {
     max-width: 413px;
     max-height: 24px;
@@ -354,6 +363,13 @@ span {
     line-height: 21px;
     color: #262626;
 }
+
+
+.container-small:hover {
+    transform: scale(1.02);
+    border: 5px solid #4CE0D7; /* Darker shadow on hover */
+}
+
 
 
 
