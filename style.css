@@ -58,6 +58,16 @@ header {
     transition: 0.5s;
 }
 
+/* logoebis hover affect */
+
+.topics-cards img {
+    transition: transform 0.3s ease;
+  }
+  
+  .topics-cards img:hover {
+    transform: scale(2);
+  }
+
 .navigation {
     display: flex;
     gap:65px;
@@ -332,7 +342,7 @@ span {
 
 }
 
-.last-footer {
+.copyright {
     max-width: 413px;
     max-height: 24px;
     margin-left: 88px;
@@ -347,18 +357,6 @@ span {
 
 
 
-.last-footer {
-    position: relative;
-}
-
-.last-footer > p {
-    position: absolute;
-    top: 20px;
-    left: -80px;
-}
-
-
-/* hr ხაზი */
 
 
 
@@ -414,6 +412,17 @@ span {
         left: 10px;
     }
 
+    .copyright{
+        position: relative;
+    }
+
+    .copyright> p {
+        position: absolute;
+        top: 20px;
+        left: -80px;
+    }
+
+/* ხაზი */
     .h {
         margin-bottom: 95px;
         margin-left: 0px;
@@ -426,5 +435,4 @@ span {
 
 }
     
-
 
