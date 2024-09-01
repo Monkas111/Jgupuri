@@ -11,14 +11,24 @@ html {
 body {
     background: #F5F5F5;
 }
-
+/* header  */
 header {
      padding: 37px 0px;
      margin-bottom: 47px;
 }
 
+h2{
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    text-shadow: 0px 6px 6px #0000000D;
+
+}
+/* container ის ქვეშ მოქცეულია ნავიგაცია*/
 .container {
-    max-width: 1270px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -94,7 +104,7 @@ header {
    transition: 0.5s;
 }
 
-
+/* container-small ში მოქცეულია ტოპიკები და ასევე ბექგრაუნდ იმიჯად არის არჩეული სურათი */
 .container-small p {
     font-family: 'Poppins';
     font-style: normal;
@@ -216,130 +226,262 @@ span {
     gap: 22px;
 }
 
-/* footer  */
 
-.footer {
-    max-width: 100%;
-    max-height: 308px;
+
+/* news and trending */
+
+hr {
+    margin-bottom: 53px;
+}
+.fashion {
     background-color: #FFFFFF;
-    position: relative;
+    border-radius: 20px;
+}
+.fashion-img {
+    background-image: url(./assets/fashion.png);
+    height:360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.button-big {
+    width: 233.95px;
+    height: 36.49px;
+    left: 165.27px;
+    top: 1304.82px;
+    background: #262626;
+    border-radius: 40px;
+    transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+    margin: 24px 923px 299px 48px;
+    
+}
+.button-big:hover {
+    border: solid 0.5px 	#000000;
+    transition: 0.3s;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }
 
-.footer .logo {
-    position: absolute;
-    width: 226px;
-    height: 49px;
-    left: 84px;
-    top: 87px;
-} 
-
-.footer .logo:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
-
+.button-small:hover {
+    transition: 0.3s;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
 }
 
 
-
-.footer > p {
-    position: absolute;
-    width: 227px;
-    height: 42px;
-    right: 337px;
-    top: 87px;
+.button-big a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 39px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+.fashion-post {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;
+    margin-right: 64px;
+    align-items: center;
+    margin-bottom: 45px;
+
+}
+/* malory იმიჯი არის პატარა სურათი ორმელიც პოსტის სათართან ერთად ადევს ნიუსებსა და fashion ის პოსტებს */
+.malory {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: 62px;
+}
+.malory img {
+    border-radius: 50px;
+}
+.malory p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #BCBCBC;
+    }
+.coming-hot {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.24em;
+    color: #F25E5E;
+}
+.fashion-post-text {
+    margin-left: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+}
+.fashion-post-text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+    width: 1033px;
+}
+/* read-more-common არის კლასი როგორც trendingis ასევე და fashion ის პოსტების ტექსტების რადგანაც ერთი და იგივე ატრიბუტები აქვთ */
+.read-more-common {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.read-more-common img {
+    width: 21px;
+    height: 13px;
+}
+
+.read-more-common > img:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+.read-more-common p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.24em;
+    color: #4CE0D7;
+}
+
+.read-more-common > p:hover {
+    color: black;
+}
+
+.read-more-common {
+    margin-bottom: 38px;
+}
+.fashion-post-container {
+    margin-bottom: 97px;
+    box-shadow: 0px 6px 6px 0px #0000000D;
+}
+.trending-header {
+    margin-bottom: 55px;
+
+}
+.trending-card {
+    background-color:#FFFFFF;
+    width: 579px;
+    height: 670px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 6px 6px 0px #0000000D;
+
+}
+.button-small {
+    width: 180.44px;
+    height: 36.49px;
+    background: #262626;
+    border-radius: 40px;
+    padding: 10px 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    position:absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.trending-img {
+    border-radius: 20px;
+    width: 579px;
+}
+
+.malory {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 28px;
+}
+
+.malory img {
+    border-radius: 50px;
+}
+
+.malory p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #BCBCBC;
+    margin-right: 100px;
+    
+}
+.trending-card-input {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    margin-left: 34px;
+    gap:30px
+}
+.trending-card-input-paragraph {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     color: #262626;
 }
-
-.footer > p:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
+.trending-cards {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 88px;
+    justify-content: space-between;
 }
-.footer .facebook {
-    position: absolute;
-    top: 92px;
-    max-width: 31px;
-    max-height: 31px;
-    right: 293px;
-}
-
-.footer .facebook:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
+.news-card {
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    width: 1204px;
+    height: 367px;
+    border-radius: 20px;
+    gap: 45px;
+    box-shadow: 0px 6px 6px 0px #0000000D;
+    
+   
 
 }
-
-.footer .tweeter {
-    position: absolute;
-    top: 92px;
-    max-width: 31px;
-    max-height: 31px;
-    right: 241px;
+.news-card-img {
+ border-radius: 20px;
 }
-
-.footer .tweeter:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
-
+.common-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
 }
-
-.footer .linkedin {
-    position: absolute;
-    top: 92px;
-    max-width: 31px;
-    max-height: 31px;
-    right: 190px;
+.news-card-input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
-.footer .linkedin:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
-
-}
-
-.footer .youtube {
-    position: absolute;
-    top: 92px;
-    max-width: 31px;
-    max-height: 31px;
-    right: 140px;
-}
-
-.footer .youtube:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
-
-}
-
-.footer .instagram {
-    position: absolute;
-    top: 92px;
-    max-width: 31px;
-    max-height: 31px;
-    right: 89px;
-}
-
-.footer .instagram:hover {
-    transform: scale(1.3);
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transition: 0.5s;
+.news-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 69px;
 
 }
 
@@ -351,18 +493,7 @@ h1:hover {
     transform: scale(1.08);
   }
 
-.copyright {
-    max-width: 413px;
-    max-height: 24px;
-    margin-left: 88px;
-    margin-bottom: 37px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    color: #262626;
-}
+
 
 
 .container-small:hover {
@@ -373,143 +504,163 @@ h1:hover {
 
 
 
-
-
-
-/* რესპონსული ვებ გვერდი */
-@media and (max: width 600px;){
-
-    .footer {
-        margin-top: 500px;
-        position: relative;
-    }
+/* new footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    /* gap: 566px 20px; */
+    align-items: center;
+    max-width: 1440px;
+    width:max-content;
     
-    .footer .logo{
-        width: 170px;
-        height: 35px;
-        position: absolute;
-        top: 13px;
-        left: 10px;
-    }
+}
+
+.footerlogo {
+    padding-top: 87px;
+    padding-left: 84px;
+    padding-right: 535px;
+}
+
+.footer-logo{
+    height: 49px;
+    width: 226px;
     
-    .footer > .facebook {
-        position: absolute;
-        top: 15px;
-        left: 270px;
-    }
+}
+
+
+.lets-hang-out {
+    padding-top: 87px;
+    /* margin-left: 558px; */
+    color: #262626;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.contacts {
+    padding-left: 70px;
+    padding-top: 92px;
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    padding-right: 89px;
+}
+
+
+.contact-social {
+    height: 31px;
+    width: 31px;   
+} 
+
+hr{
+    border: none;
+    border-top: 1px solid #BCBCBC;
+    width: 1290px;
+    margin: 77px auto 0 ;
+    margin-bottom: 52.5px;
     
-    .footer > .tweeter {
-        position: absolute;
-        top: 15px;
-        left: 320px;
-    }
+}
+
+.copyright{
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 700;
+    color: #262626;
+    padding-top: 34px;
+    padding-left: 88px;
+}
+.footer-container{
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 6px 0px 6px 0px #0000000D;
+    margin-top: 69px;
+    height: 308px;
+    max-width: 1440px
     
-    .footer > .linkedin {
-        position: absolute;
-        top: 15px;
-        left: 370px;
-    }
-    
-    .footer > .youtube {
-        position: absolute;
-        top: 15px;
-        left: 420px;
-    }
-    
-    .footer > .instagram {
-        position: absolute;
-        top: 15px;
-        left: 470px;
-    }
-    
-    .footer > p {
-        position: absolute;
-        top: 60px;
-        left: 10px;
-    }
+}
 
-    .copyright{
-        position: relative;
-    }
 
-    .copyright> p {
-        position: absolute;
-        top: 20px;
-        left: -80px;
-    }
-
-/* ხაზი */
-    .h {
-        margin-bottom: 95px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    hr {
-        max-width: 600px;
-    }
-/* ნავიგაციისა და მენიუს რესპონსულის დამატება */
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        margin-bottom: -40px;
-    }
-    .navigation {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-    }
-
-    .container-small {
-        background-image: url(./assets/new-image.png);
-        width: 500px;
-        height: 220px;
-        margin: 0 auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 20px;
-        margin-bottom: 20px;
-    }
-
-    h3 {
-        font-size: 10px;
-    }
-
-    .lux-ventus-magazine {
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        padding-left: 50PX;
-        gap: 5px;
-    }
-
-    .lux-ventus-magazine > h1 {
-        font-size: 20px;
-    }
-
-    span {
-        font-size: 20px;
-    }
-
-    .lux-ventus-magazine > p {
-        font-size: 12px;
-        
-    }
-
-    .topics h2 {
-        padding-left: 225px;
-    }
-
-    .topics-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding-left: 80px;
-    }
+.footer > p:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
+}
+.footer .facebook:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
 
 }
+.footer .twitter:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
+
+}
+.footer .linkedin:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
+
+}
+
+.footer .youtube:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
+
+}
+
+.footer .instagram:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transition: 0.5s;
+
+}
+
+
+/* რესპონსული */
+     
+     @media (max-width: 600px) {
+        .container, .section, .container-small, .trending-cards, .news-cards {
+            max-width: 100%;
+            padding: 0 15px;
+            flex-wrap: wrap;
+        }
+        
+        .navigation {
+            gap: 20px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
     
+        .topics-cards {
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        
+        .trending-card, .news-card {
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+        }
+    
+        .footer-container {
+            flex-wrap: wrap;
+        }
+
+        .contacts{
+            flex-wrap: wrap;
+        }
+    }
 
